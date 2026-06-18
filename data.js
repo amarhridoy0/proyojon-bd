@@ -201,54 +201,6 @@ export const products = [
       { name: "805 Coin", price: "1600৳" },
       { name: "2100 Coin", price: "3200৳" }
     ]
-  },
-  {
-    id: 'freefire',
-    name: "Free Fire Diamond",
-    category: "coins",
-    image: "/images/freefire.png",
-    badge: "Game",
-    description: "Top up Free Fire Diamonds at the cheapest price in Bangladesh. Instant delivery to your Player ID.",
-    features: [
-      { icon: "diamond", title: "Instant Diamonds", desc: "Direct top-up using your Player ID." },
-      { icon: "sports_esports", title: "All Regions", desc: "Works for BD and Global accounts." },
-      { icon: "security", title: "100% Safe", desc: "No login required, only your Player ID." }
-    ],
-    faqs: [
-      { q: "Where can I find my Player ID?", a: "Open Free Fire, tap your profile picture, and copy the Player ID shown." },
-      { q: "How long does it take?", a: "Usually within 5-15 minutes after payment confirmation." }
-    ],
-    packages: [
-      { name: "100 Diamond", price: "110৳" },
-      { name: "210 Diamond", price: "220৳" },
-      { name: "530 Diamond", price: "530৳" },
-      { name: "1060 Diamond", price: "1050৳" },
-      { name: "2180 Diamond", price: "2100৳" },
-      { name: "5600 Diamond", price: "5200৳" }
-    ]
-  },
-  {
-    id: 'tinder',
-    name: "Tinder Subscription",
-    category: "streaming",
-    image: "/images/tinder.png",
-    badge: "Dating",
-    description: "Get Tinder Gold or Platinum subscription at the best price. More matches, more features.",
-    features: [
-      { icon: "favorite", title: "Unlimited Likes", desc: "Like as many people as you want." },
-      { icon: "bolt", title: "Boost Profile", desc: "Get more profile views instantly." },
-      { icon: "visibility", title: "See Who Likes You", desc: "Know who swiped right before you match." }
-    ],
-    faqs: [
-      { q: "What account info do I need to provide?", a: "Just your Tinder-registered email address." },
-      { q: "Will my account be safe?", a: "Yes, we use official subscription methods. No password needed." }
-    ],
-    packages: [
-      { name: "1 Month Gold", price: "350৳" },
-      { name: "3 Month Gold", price: "900৳" },
-      { name: "1 Month Platinum", price: "500৳" },
-      { name: "3 Month Platinum", price: "1350৳" }
-    ]
   }
 ];
 
