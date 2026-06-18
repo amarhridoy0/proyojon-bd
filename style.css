@@ -240,8 +240,15 @@ a {
   color: var(--color-text);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section-header p {
+  text-align: center;
+  color: var(--color-text-light);
 }
 
 .category-filters {
@@ -1221,18 +1228,18 @@ details[open] summary ~ * {
 
 /* Why Choose Us Section */
 .why-section {
-  padding: 4rem 0;
+  padding: 1.5rem 0;
   background: rgba(255,255,255,0.02);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  padding: 0 2rem;
+  gap: 1.25rem;
+  padding: 0 1.25rem;
 }
 
 .why-card {
