@@ -556,16 +556,22 @@ a {
 }
 
 @media (max-width: 768px) {
+  /* Push page content above the sticky FAB bar */
+  body {
+    padding-bottom: 80px;
+  }
+
   .floating-actions {
     flex-direction: row;
     bottom: 0;
     right: 0;
     left: 0;
-    padding: 1rem;
-    background: rgba(2, 6, 23, 0.9);
+    padding: 0.6rem 1rem;
+    background: rgba(2, 6, 23, 0.95);
     backdrop-filter: blur(10px);
     border-top: 1px solid var(--color-border);
     justify-content: stretch;
+    z-index: 200;
   }
   
   .fab {
