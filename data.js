@@ -2,6 +2,32 @@ export const whatsappNumber = "8801604929025";
 
 export const products = [
   {
+    id: 'tiktok',
+    name: "Tiktok Coin",
+    category: "coins",
+    image: "/images/tiktok.png",
+    badge: "Coins",
+    description: "Purchase TikTok coins to send virtual gifts to your favorite creators during their live streams and videos.",
+    features: [
+      { icon: "flash_on", title: "Instant Top Up", desc: "Coins are added directly to your account." },
+      { icon: "verified", title: "100% Safe", desc: "Official top-up via your account ID." },
+      { icon: "stars", title: "Support Creators", desc: "Send gifts and show love to your favorite TikTokers." }
+    ],
+    faqs: [
+      { q: "What do I need to provide?", a: "Just provide your TikTok Username or ID. No password needed." },
+      { q: "How long does delivery take?", a: "Delivery is instant, usually within 2-5 minutes after payment confirmation." }
+    ],
+    packages: [
+      { name: "280 coin", price: "580৳" },
+      { name: "350 coin", price: "750৳" },
+      { name: "490 coin", price: "1090৳" },
+      { name: "700 coin", price: "1450৳" },
+      { name: "1050 coin", price: "2150৳" },
+      { name: "1400 coin", price: "2950৳" },
+      { name: "2100 coin", price: "4300৳" }
+    ]
+  },
+  {
     id: 'spotify',
     name: "Spotify Premium",
     category: "streaming",
