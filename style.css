@@ -687,8 +687,8 @@ body {
 }
 
 .voucher-header {
-  background: #ffffff;
-  border-bottom: 1px solid #eaeaea;
+  background: var(--color-surface);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .voucher-logo {
@@ -697,7 +697,7 @@ body {
   align-items: center;
   font-size: 1.5rem;
   font-weight: 900;
-  color: #000;
+  color: #fff;
 }
 
 .login-btn {
@@ -715,9 +715,9 @@ body {
 }
 
 .voucher-search-wrapper {
-  background: #ffffff;
+  background: var(--color-surface);
   padding: 0;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .voucher-search-container {
@@ -732,7 +732,7 @@ body {
   outline: none;
   font-size: 1rem;
   background: transparent;
-  color: #333;
+  color: #fff;
 }
 
 .voucher-search-btn {
