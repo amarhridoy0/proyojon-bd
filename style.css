@@ -271,8 +271,15 @@ a {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
 }
 
 /* Product Card */
@@ -665,6 +672,43 @@ a {
   line-height: 1.6;
   padding-left: 2rem;
   margin-bottom: 1.5rem;
+}
+
+/* Mobile VoucherBD Style Overrides */
+@media (max-width: 767px) {
+  .product-card {
+    border-radius: var(--radius-md);
+  }
+  .product-content {
+    padding: 0.5rem !important;
+    text-align: center;
+  }
+  .product-title {
+    font-size: 0.75rem !important;
+    margin-bottom: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .product-content > div:not(.product-title), 
+  .product-badge {
+    display: none !important;
+  }
+  .product-image {
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+  }
+  /* Fix the search filter buttons for mobile to be compact */
+  .search-filters {
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    white-space: nowrap;
+  }
+  .filter-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
 }
 
 /* Support Page Styles */
