@@ -909,6 +909,64 @@ body {
 }
 
 
+
+/* Support & Pricing page grids */
+.support-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .support-steps-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .support-step-card {
+    padding: 1rem !important;
+  }
+  .step-title {
+    font-size: 0.85rem !important;
+  }
+  .step-desc {
+    font-size: 0.75rem !important;
+  }
+  .step-badge {
+    font-size: 1.5rem !important;
+  }
+  .step-icon {
+    font-size: 1.5rem !important;
+  }
+  .step-icon-wrapper {
+    width: 48px !important;
+    height: 48px !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .help-banner {
+    padding: 1.5rem !important;
+  }
+  .help-btn {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.82rem !important;
+  }
+  #pricingGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Support Page Styles */
 .support-step-card {
   position: relative;
