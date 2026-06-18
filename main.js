@@ -3,38 +3,16 @@ import { products } from './data.js';
 function createProductCard(product) {
   const card = document.createElement('div');
   card.className = 'product-card voucher-style-card';
-  
-  let icon = 'star';
-  let bgColor = 'var(--color-primary)';
-  let cardTitle = product.name;
-  let smallLabel = product.name.split(' ')[0]; // Default to first word
-
-  switch(product.id.toLowerCase()) {
-    case 'spotify': icon = 'music_note'; bgColor = '#1DB954'; smallLabel = 'Spotify'; break;
-    case 'facebook': icon = 'thumb_up'; bgColor = '#1877F2'; smallLabel = 'Facebook'; break;
-    case 'likee': icon = 'favorite'; bgColor = '#FF0050'; smallLabel = 'Likee'; break;
-    case 'chamet': icon = 'videocam'; bgColor = '#A855F7'; smallLabel = 'Chamet'; cardTitle = 'Chamet Diamond'; break;
-    case 'bigo': icon = 'live_tv'; bgColor = '#06B6D4'; smallLabel = 'BIGO LIVE'; cardTitle = 'Bigo Diamonds'; break;
-    case 'tango': icon = 'payments'; bgColor = '#F43F5E'; smallLabel = 'LIVE'; cardTitle = 'Tango Gift Card'; break;
-    case 'imo': icon = 'chat'; bgColor = '#1D4ED8'; smallLabel = 'imo'; cardTitle = 'IMO Diamonds'; break;
-    case 'mico': icon = 'mic'; bgColor = '#EAB308'; smallLabel = 'Mico'; cardTitle = 'Mico Coins'; break;
-    default:
-      if(product.category === 'streaming') { icon = 'play_circle'; bgColor = '#E50914'; }
-      else if(product.category === 'social') { icon = 'thumb_up'; bgColor = '#1877F2'; }
-      else if(product.category === 'coins') { icon = 'diamond'; bgColor = '#F5A623'; }
-  }
 
   card.innerHTML = `
-    <div class="voucher-card-top" style="background: ${bgColor};">
-      <div class="voucher-icon-circle">
-        <span class="material-symbols-outlined">${icon}</span>
-      </div>
-      <div class="voucher-small-label">${smallLabel}</div>
+    <div class="voucher-card-top" style="padding: 0;">
+      <img src="${product.image}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
     <div class="voucher-card-bottom">
-      <h3 class="voucher-card-title">${cardTitle}</h3>
+      <h3 class="voucher-card-title">${product.name}</h3>
     </div>
   `;
+
   
   card.style.cursor = 'pointer';
   card.onclick = (e) => {
